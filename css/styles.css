@@ -863,6 +863,9 @@ footer .logo {
   letter-spacing: 0.06em;
 
   color: #ffffff;
+
+  cursor: pointer;
+  border: none;
 }
 
 .subs-btn::after {
@@ -882,7 +885,10 @@ footer .logo {
   flex-basis: 100%;
   margin-right: 12px;
 
+  padding: 15px;
+
   background-color: var(--footer-bg-color);
+  color: #ffffff;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
