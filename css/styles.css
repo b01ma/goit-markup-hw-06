@@ -267,7 +267,7 @@ header .logo-span {
 }
 
 .backdrop.is-hidden {
-  opacity: 0;
+  opacity: 1;
   transform: scaley(0);
   transform: translatey(-100%);
 
@@ -281,6 +281,7 @@ header .logo-span {
   transform: translate(-50%, -50%);
   z-index: 3;
 
+  box-sizing: border-box;
   min-width: 528px;
   min-height: 581px;
 
@@ -289,9 +290,7 @@ header .logo-span {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  padding: 30px;
-  padding-top: 50px;
-  text-align: center;
+  padding: 40px;
 }
 
 .btn-modal-close {
@@ -316,7 +315,100 @@ header .logo-span {
   background-repeat: no-repeat;
   background-position: center;
 }
+/* Заголовок модального окна */
+.modal b {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
 
+  color: #212121;
+
+  margin-bottom: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-callback {
+  list-style: none;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.form-input {
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-input:focus {
+  border-color: var(--accent-text-color);
+}
+
+.form-input:focus .form-icon {
+  fill: var(--accent-text-color);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  transform: translateY(50%);
+
+  height: ;
+}
+
+.textarea {
+  resize: none;
+
+  margin-bottom: 20px;
+  padding: 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.consent {
+  margin-bottom: 30px;
+}
+
+.form-submit-btn {
+  width: 200px;
+  height: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  cursor: pointer;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
+
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 /* Преимущества */
 
 /* Скрытый заголовок, но виден для ассестивных уствройств */

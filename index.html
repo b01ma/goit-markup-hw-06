@@ -66,40 +66,55 @@
                 <div class="container">
                     <h1 class="hero-heading">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                     <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
+                    
                     <!-- Модальное окно -->
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
                             <button class="btn-modal-close" data-modal-close>
                             </button>
                             <b>Оставьте свои данные, мы вам перезвоним</b>
+
                             <!-- Форма заполнения -->
-                            <ul>
-                                <li>
-                                    <label for="name">Имя</label>
-                                    <input type="text" name="name" id="name" />
-                                </li>
-                                <li>
-                                    <label for="tel">Телефон</label>
-                                    <input type="tel" name="telephone" id="tel">
-                                </li>
-                                <li>
-                                    <label for="email">Почта</label>
-                                    <input type="email" name="email" id="email">
-                                </li>
-                                <li>
-                                    <label for="comment">Комментарий</label>
-                                    <textarea name="comment" id="comment" rows="10"></textarea>
-                                </li>
-                            </ul>
+                            <form class="form" action="">
+                                <ul class="form-callback">
+                                    <li class="form-field" >
+                                        <label class="form-label" for="name">Имя</label>
+                                        <input class="form-input" type="text" name="name" id="name" />
+                                        <svg class="form-icon" width="12" height="12">
+                                            <use href="./images/icon-sprite.svg#iconName"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="form-field">
+                                        <label class="form-label" for="tel">Телефон</label>
+                                        <input class="form-input" type="tel" name="telephone" id="tel">
+                                        <svg class="form-icon" width="12" height="12">
+                                            <use href="./images/icon-sprite.svg#iconTelNum"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="form-field">
+                                        <label class="form-label" for="email">Почта</label>
+                                        <input class="form-input" type="email" name="email" id="email">
+                                        <svg class="form-icon" width="15" height="12">
+                                            <use href="./images/icon-sprite.svg#iconMail"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="form-field">
+                                        <label for="comment">Комментарий</label>
+                                        <textarea class="textarea" name="comment" id="comment" rows="8"></textarea>
+                                    </li>
+                                </ul>
 
-                            <div>
-                                <input type="checkbox" name="policy" id="policy">
-                                <label for="policy">Соглашаюсь с рассылкой и принимаю
-                                    <a href="">Условия договора</a>
-                                </label>
-                            </div>
+                                <div class="consent" >
+                                    <input type="checkbox" value="policy" name="policy" id="policy">
+                                    <label for="policy">Соглашаюсь с рассылкой и принимаю
+                                        <a href="">Условия договора</a>
+                                    </label>
+                                </div>
+                                
+                                <button class="form-submit-btn" type="submit">Отправить</button>
+                            </form>
 
-                            <button type="submit">Отправить</button>
+                            
                            
                         </div>
                     </div>
