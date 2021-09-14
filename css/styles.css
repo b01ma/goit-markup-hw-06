@@ -354,11 +354,13 @@ header .logo-span {
   border-radius: 4px;
 }
 
-.form-input:focus {
-  border-color: var(--accent-text-color);
+.form-input:focus,
+.form-input:active {
+  border: 1px solid var(--accent-text-color);
 }
 
-.form-input:focus .form-icon {
+.form-input:focus + .form-icon,
+.form-input:active + .form-icon {
   fill: var(--accent-text-color);
 }
 
