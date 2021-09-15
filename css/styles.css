@@ -293,15 +293,22 @@ header .logo-span {
   padding: 40px;
 }
 
+.modal-icon {
+  fill: #000000;
+}
+
 .btn-modal-close {
   position: absolute;
   top: 8px;
   right: 8px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 30px;
   width: 30px;
 
-  display: block;
   padding: 0;
   margin: 0;
   cursor: pointer;
@@ -310,10 +317,10 @@ header .logo-span {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
+}
 
-  background-image: url(../images/icon-close-tab.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.btn-modal-close:hover .modal-icon {
+  fill: var(--icon-focus-color);
 }
 /* Заголовок модального окна */
 .modal b {
@@ -381,6 +388,8 @@ header .logo-span {
 .textarea {
   resize: none;
 
+  height: 120px;
+
   margin-bottom: 20px;
   padding: 12px;
 
@@ -399,6 +408,12 @@ header .logo-span {
   position: relative;
   margin-bottom: 30px;
   padding-left: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.consent a {
+  color: var(--accent-text-color);
 }
 
 .checkbox {
@@ -460,6 +475,7 @@ header .logo-span {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 /* Преимущества */
 
